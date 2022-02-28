@@ -31,10 +31,4 @@ jobs:
           curl --location --request POST "https://app.apiiro.com/rest-api/v1/cicd/builds" \
             -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBVcmwiOiJodHRwczovL2FwcC5hcGlpcm8uY29tIiwia2V5IjoiNjlmMDk4NTMtMzA2NC00NDAyLTkwM2YtYjc2MzViNDcxYmE5IiwiZW52IjoiODc1ZjRiY2JmZDViNDViNWFjYTUyMDQ3OWYiLCJleHAiOjE2Nzc2MDA4ODB9.y5LO0R8oFuSExKrARasGJmoaC9nR7oYFettu6Q8D7bU' \
             -H 'Content-Type: application/json' \
-            --data '{ "buildId": "$BUILD_NUMBER", "sourceCommit": "$GIT_COMMIT", "repositoryKey": "https___github_com_joeapiiro__WebGoat__WebGoat", "versionString": "$VERSION", "applicationName": "WebGoat", "buildPageUrl": "$BUILD_URL" }'
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+            --data '{ "buildId": "$BUILD_NUMBER", "sourceCommit": "$GIT_COMMIT", "repositoryKey": "https___github_com_joeapiiro__WebGoat", "versionString": "$VERSION", "applicationName": "Webgoat", "buildPageUrl": "$BUILD_URL" }'
