@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: 
+        run: |
           curl --location --request POST "https://$APIIRO_API/v1/cicd/builds" \
             -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBVcmwiOiJodHRwczovL2FwcC5hcGlpcm8uY29tIiwia2V5IjoiNjlmMDk4NTMtMzA2NC00NDAyLTkwM2YtYjc2MzViNDcxYmE5IiwiZW52IjoiODc1ZjRiY2JmZDViNDViNWFjYTUyMDQ3OWYiLCJleHAiOjE2Nzc2MDA4ODB9.y5LO0R8oFuSExKrARasGJmoaC9nR7oYFettu6Q8D7bU' \
             -H 'Content-Type: application/json' \
